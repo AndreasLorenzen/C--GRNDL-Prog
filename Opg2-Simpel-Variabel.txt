@@ -1,0 +1,11 @@
+namespace SimpelVariabel
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Andreas";
+            Console.WriteLine($"{name}");
+        }
+    }
+}

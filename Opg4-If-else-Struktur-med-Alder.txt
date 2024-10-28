@@ -1,0 +1,22 @@
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int age;
+
+            Console.WriteLine("Hvor gammel er du?");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            if (age >= 18)
+            {
+                Console.WriteLine("Du er myndig");
+            } 
+            else
+            {
+                Console.WriteLine("Du er ikke myndig");
+            }
+        }
+    }
+}

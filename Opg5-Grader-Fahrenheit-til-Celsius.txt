@@ -1,0 +1,41 @@
+namespace Opgavehæfte_C_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Hvis projekt is from an earlier assigment, and is therefor more developed
+            Console.WriteLine("Velkommen til gradeomregneren");
+            while (true)
+            {
+                Console.WriteLine("Du skal nu vælge om du vil have udregnet fra Fahrenheit til Fahrenheit, Kelvin eller Réaumur");
+                string choice = Console.ReadLine();
+                Console.WriteLine("Indtast en værdi i Celsius");
+                double Cel = Convert.ToDouble(Console.ReadLine());
+                double Fah = (Cel * 9 / 5) + 32;
+                double Kel = Cel + 273.15;
+                double Rea = Cel * 0.8;
+                if (choice == "F")
+                {
+                    Console.WriteLine($"Du har valgt Fahrenheitog indtastet {Cel} Celsius. Det er {Fah} Fahrenheit");
+                }
+                else if (choice == "K")
+                {
+                    Console.WriteLine($"Du har valgt Kelvin indtastet {Cel} Celsius. Det er {Kel} Kelvin");
+                }
+                else if (choice == "R")
+                {
+                    Console.WriteLine($"Du har valgt Réaumur indtastet {Cel} Celsius. Det er {Rea} Réaumur");
+                }
+                else
+                {
+                    Console.WriteLine("Forkert indtastning");
+                }
+            }
+
+
+
+
+        }
+    }
+}

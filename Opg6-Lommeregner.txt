@@ -1,0 +1,47 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string valg;
+            int num1;
+            int num2;
+
+            Console.WriteLine("Vælg 2 tal");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+            int sum = num1 + num2;
+            int sub = num1 - num2;
+            int mul = num2 * num1;
+            int div = num2 / num2;
+            Console.WriteLine("Du skal nu vælge om du vil plusse, subtrerer, dividere eller multiplicere (P,S,D,M)");
+            valg = Console.ReadLine().ToUpper();
+
+            if (valg == "P")
+            {
+                Console.WriteLine($"{num1} + {num2} = {sum}");
+            }
+            else if (valg == "S")
+            {
+                Console.WriteLine($"{num1} - {num2} = {sub}");
+            }
+            else if (valg == "D")
+            {
+                Console.WriteLine($"{num1} / {num2} = {div}");
+            }
+            else if (valg == "M")
+            {
+                Console.WriteLine($"{num1} * {num2} = {mul}");
+            }
+            else
+            {
+                {
+                    Console.WriteLine("Forkert indtastning");
+                }
+            }
+        }
+    }
+}

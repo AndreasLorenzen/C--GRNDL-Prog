@@ -1,0 +1,17 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] Word = { "Apple", "Iphone", "Laptop", "Human" };
+
+            for (int i = 0; i < Word.Length; i++)
+            {
+                Console.WriteLine(Word[i]);
+            }
+        }
+    }
+}

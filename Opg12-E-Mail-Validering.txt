@@ -1,0 +1,27 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool valid = false;
+            while (!valid)
+            {
+                Console.Write("Enter email : ");
+                string email = Console.ReadLine();
+                valid = email.Contains("@") && email.Contains(".");
+
+                if (valid)
+                {
+                    Console.WriteLine("Your email is valid");
+                }
+                else
+                {
+                    Console.WriteLine("Your email needs to contain @ to be valid. Try again");
+                }
+            }
+        }
+    }
+}

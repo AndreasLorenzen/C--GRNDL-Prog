@@ -1,0 +1,23 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // const lockes in the value assigned to the constant. That means that it can in no way be tampered with.
+            const double moms = 0.25;
+            const double fullmoms = 1.25;
+
+            Console.WriteLine("Hvad koster genstanden uden moms?");
+            double eks = Convert.ToDouble(Console.ReadLine());
+
+            double VA = eks * moms;
+            double VAT = eks * fullmoms;
+
+            Console.WriteLine($"Prisen på genstanden med moms på 25% er et total på {VAT} kr.");
+            Console.WriteLine($"Du har betalt {VA} kr. i moms");
+        }
+    }
+}

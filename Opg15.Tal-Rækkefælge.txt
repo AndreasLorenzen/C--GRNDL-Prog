@@ -1,0 +1,19 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace GrundMatOp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[]  numbers = new int [3];
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine($"Indtast dine tal{i + 1}: ");
+                numbers[i] = int.Parse( Console.ReadLine() );
+            }
+            Array.Sort( numbers );
+            Console.WriteLine($"Tallene i stigende rækkefølge er: {string.Join(", ", numbers)}");
+        }
+    }
+}
